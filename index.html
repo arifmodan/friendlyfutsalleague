@@ -296,9 +296,9 @@ tr:hover td{background:#fdf8ff}
 <div id="standings" class="section active">
   <div class="stat-cards">
     <div class="stat-card"><div class="stat-num">3</div><div class="stat-lbl">Teams</div></div>
-    <div class="stat-card"><div class="stat-num">7</div><div class="stat-lbl">Played</div></div>
+    <div class="stat-card"><div class="stat-num">8</div><div class="stat-lbl">Played</div></div>
     <div class="stat-card"><div class="stat-num">120</div><div class="stat-lbl">Goals</div></div>
-    <div class="stat-card"><div class="stat-num">5</div><div class="stat-lbl">Remaining</div></div>
+    <div class="stat-card"><div class="stat-num">4</div><div class="stat-lbl">Remaining</div></div>
   </div>
 
   <!-- NEXT MATCH -->
@@ -418,6 +418,41 @@ tr:hover td{background:#fdf8ff}
 <!-- RESULTS -->
 <div id="results" class="section">
   <div class="sec-hdr"><div><div class="sh-pre">Summer Cup · Season 1</div><div class="sh-title">Results</div></div></div>
+
+  <!-- WEEK 8 -->
+  <div class="result-card">
+    <div class="result-header">
+      <div><div class="result-week">SUMMER CUP · SEASON 1</div><div class="result-date">WEEK 8 · SAT 13 JUN 2026</div></div>
+      <div class="played-badge">✓ PLAYED</div>
+    </div>
+    <div style="padding:12px 16px;display:flex;flex-direction:column;gap:6px">
+      <div class="team-row" style="background:#111;border-left:4px solid #1a56db">
+        <div class="team-row-name">King FC</div>
+        <div class="team-row-score">8</div>
+        <div style="background:#f59e0b;color:#000;font-size:10px;font-weight:800;padding:3px 8px;border-radius:20px;white-space:nowrap">🥇 3 PTS</div>
+      </div>
+      <div class="team-row" style="background:#111;border-left:4px solid #16a34a">
+        <div class="team-row-name">Empire FC</div>
+        <div class="team-row-score">5</div>
+        <div style="background:rgba(255,255,255,.1);color:#fff;font-size:10px;font-weight:800;padding:3px 8px;border-radius:20px;white-space:nowrap">🥈 1 PT</div>
+      </div>
+      <div class="team-row" style="background:#111;border-left:4px solid #e02424">
+        <div class="team-row-name">GOAT</div>
+        <div class="team-row-score">3</div>
+        <div style="background:rgba(255,255,255,.06);color:rgba(255,255,255,.5);font-size:10px;font-weight:800;padding:3px 8px;border-radius:20px;white-space:nowrap">🥉 0 PTS</div>
+      </div>
+    </div>
+    <div class="scorers-section">
+      <div class="scorers-label">⚽ GOAL SCORERS</div>
+      <div class="scorer-line"><span style="color:#4f8ef7;font-weight:800">King FC</span> &nbsp;Arif Modan 5 · Rehaan 3</div>
+      <div class="scorer-line"><span style="color:#16a34a;font-weight:800">Empire FC</span> &nbsp;Yameen 4 · Chan 1</div>
+      <div class="scorer-line"><span style="color:#e02424;font-weight:800">GOAT</span> &nbsp;Aasif 2 · Rai 1</div>
+    </div>
+    <div class="motm-bar">
+      <div class="motm-icon">👑</div>
+      <div><div class="motm-label">MAN OF THE MATCH</div><div class="motm-name">Rehaan <span style="color:#f59e0b;font-size:12px">King FC</span></div></div>
+    </div>
+  </div>
 
   <!-- WEEK 7 -->
   <div class="result-card">
@@ -751,8 +786,8 @@ tr:hover td{background:#fdf8ff}
 <div id="matchdays" class="section">
   <div class="sec-hdr"><div><div class="sh-pre">Summer Cup · Season 1</div><div class="sh-title">Fixtures</div></div></div>
   <div class="md-grid">
-    <div class="md-c"><div class="md-n" id="s-played">6</div><div class="md-l">Played</div></div>
-    <div class="md-c"><div class="md-n" id="s-remaining">6</div><div class="md-l">Remaining</div></div>
+    <div class="md-c"><div class="md-n" id="s-played">8</div><div class="md-l">Played</div></div>
+    <div class="md-c"><div class="md-n" id="s-remaining">4</div><div class="md-l">Remaining</div></div>
   </div>
   <div class="ctrl"><div class="ctrl-note">Mark any missed week as skipped</div><button class="ctrl-btn" id="skip-btn" onclick="toggleSkipMode()">Mark Skipped</button></div>
   <div id="schedule-list"></div>
@@ -957,11 +992,11 @@ const LOGOS={king:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAH4CAYAAAC
 
 const TEAMS=[
   {id:'king',name:'King FC',jerseyColor:'#1a56db',jerseyColor2:'#1e3a8a',homeLabel:'Blue (home)',awayLabel:'White (away)',
-   players:[{name:'Arif Modan',num:10,pos:'MID',cap:true,goals:24},{name:'Rehaan',num:7,pos:'FWD',cap:false,goals:11},{name:'Ju Ju',num:11,pos:'FWD',cap:false,goals:7},{name:'Hasan',num:14,pos:'MID',cap:false,goals:10},{name:'M.Twalha',num:2,pos:'GK',cap:false,goals:0},{name:'Twalha',num:4,pos:'DEF',cap:false,goals:0}]},
+   players:[{name:'Arif Modan',num:10,pos:'MID',cap:true,goals:29},{name:'Rehaan',num:7,pos:'FWD',cap:false,goals:14},{name:'Ju Ju',num:11,pos:'FWD',cap:false,goals:7},{name:'Hasan',num:14,pos:'MID',cap:false,goals:10},{name:'M.Twalha',num:2,pos:'GK',cap:false,goals:0},{name:'Twalha',num:4,pos:'DEF',cap:false,goals:0}]},
   {id:'goat',name:'GOAT',jerseyColor:'#e02424',jerseyColor2:'#991b1b',homeLabel:'Red (home)',awayLabel:'Yellow (away)',
-   players:[{name:'Huzy',num:1,pos:'GK',cap:false,goals:0},{name:'A.R',num:7,pos:'DEF',cap:false,goals:0},{name:'Mustafa',num:4,pos:'DEF',cap:false,goals:2},{name:'Rai',num:null,pos:'MID',cap:false,goals:7},{name:'Yusuf',num:9,pos:'FWD',cap:false,goals:6},{name:'Aasif',num:11,pos:'FWD',cap:true,goals:13}]},
+   players:[{name:'Huzy',num:1,pos:'GK',cap:false,goals:0},{name:'A.R',num:7,pos:'DEF',cap:false,goals:0},{name:'Mustafa',num:4,pos:'DEF',cap:false,goals:2},{name:'Rai',num:null,pos:'MID',cap:false,goals:8},{name:'Yusuf',num:9,pos:'FWD',cap:false,goals:6},{name:'Aasif',num:11,pos:'FWD',cap:true,goals:15}]},
   {id:'empire',name:'Empire FC',jerseyColor:'#057a55',jerseyColor2:'#065f46',homeLabel:'Black (home)',awayLabel:'Green (away)',
-   players:[{name:'Junaid',num:8,pos:'MID',cap:true,goals:9},{name:'Anas',num:7,pos:'FWD',cap:false,goals:13},{name:'Siddiq',num:26,pos:'DEF',cap:false,goals:3},{name:'Yameen',num:19,pos:'FWD',cap:false,goals:13},{name:'Chan',num:10,pos:'MID',cap:false,goals:1},{name:'Hafiz Farid',num:1,pos:'GK',cap:false,goals:0}]}
+   players:[{name:'Junaid',num:8,pos:'MID',cap:true,goals:9},{name:'Anas',num:7,pos:'FWD',cap:false,goals:13},{name:'Siddiq',num:26,pos:'DEF',cap:false,goals:3},{name:'Yameen',num:19,pos:'FWD',cap:false,goals:17},{name:'Chan',num:10,pos:'MID',cap:false,goals:1},{name:'Hafiz Farid',num:1,pos:'GK',cap:false,goals:1}]}
 ];
 
 const MVP_POINTS = [
@@ -969,6 +1004,7 @@ const MVP_POINTS = [
   {name:'M.Twalha', team:'King FC', teamId:'king', points:1, weeks:['W6']},
   {name:'Hafiz Farid', team:'Empire FC', teamId:'empire', points:2, weeks:['W3','W4']},
   {name:'Anas', team:'Empire FC', teamId:'empire', points:1, weeks:['W7']},
+  {name:'Rehaan', team:'King FC', teamId:'king', points:1, weeks:['W8']},
 ];
 
 const WEEK_SCORES = {
@@ -979,12 +1015,13 @@ const WEEK_SCORES = {
   5: [{team:'King FC', goals:9}, {team:'GOAT', goals:4}, {team:'Empire FC', goals:3}],
   6: [{team:'King FC', goals:8}, {team:'GOAT', goals:5}, {team:'Empire FC', goals:1}],
   7: [{team:'Empire FC', goals:8}, {team:'GOAT', goals:6}, {team:'King FC', goals:4}],
+  8: [{team:'King FC', goals:8}, {team:'Empire FC', goals:5}, {team:'GOAT', goals:3}],
 };
 
 const standingsData = [
-  {id:'king',  name:'King FC',   p:7, w:4, l:1, d:2, gf:52, ga:0, form:['W','W','D','D','W','W','L'], pts:14},
-  {id:'empire',name:'Empire FC', p:7, w:3, l:2, d:2, gf:40, ga:0, form:['D','D','W','W','L','L','W'], pts:11},
-  {id:'goat',  name:'GOAT',      p:7, w:0, l:4, d:3, gf:28, ga:0, form:['L','L','L','L','D','D','D'], pts:3},
+  {id:'king',  name:'King FC',   p:8, w:5, l:1, d:2, gf:60, ga:0, form:['W','W','D','D','W','W','L','W'], pts:17},
+  {id:'empire',name:'Empire FC', p:8, w:3, l:3, d:2, gf:45, ga:0, form:['D','D','W','W','L','L','W','D'], pts:12},
+  {id:'goat',  name:'GOAT',      p:8, w:0, l:5, d:3, gf:31, ga:0, form:['L','L','L','L','D','D','D','L'], pts:3},
 ];
 
 function logo(id, cls) {
@@ -998,7 +1035,7 @@ document.getElementById('logo-empire').src = LOGOS.empire;
 
 // Countdown
 function updateCountdown() {
-  const diff = new Date('2026-06-06T18:00:00') - new Date();
+  const diff = new Date('2026-06-21T18:00:00') - new Date();
   if (diff <= 0) { document.getElementById('countdown').textContent = '0'; return; }
   document.getElementById('countdown').textContent = Math.floor(diff / 86400000);
 }
@@ -1109,7 +1146,7 @@ document.getElementById('scorers-body').innerHTML = all.map((p,i) => {
 // Fixtures
 const TOTAL = 12;
 const START = new Date(2026,3,25);
-const TODAY = new Date();
+const TODAY = new Date('2026-06-14');
 let skipped = new Set(), skipMode = false;
 
 function addW(d, n) {
